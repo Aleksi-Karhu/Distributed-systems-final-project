@@ -19,12 +19,12 @@ def main():
 
         # Prompts the user for a starting page
         while True:
-            start = input("Enter staring page: ")
+            start = input("Enter starting page: ")
 
             # Checks for empty strings
             # Calls the server to check the validity of the link
             if (start.strip() == "" or proxy.checkLink(start) != True):
-                print("Invalid link. Please provide a correct URL")
+                print("Invalid link. Please provide a correct Wikipedia page")
             else: 
                 break
 
@@ -32,7 +32,7 @@ def main():
         while True:
             end = input("Enter ending page: ")
             if (end.strip() == "" or proxy.checkLink(end) != True):
-                print("Invalid link. Please provide a correct URL")
+                print("Invalid link. Please provide a correct Wikipedia page")
             else: 
                 break
 
